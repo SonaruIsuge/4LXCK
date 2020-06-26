@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Item.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Scenes\OverTheShoulderAim\ActivateOnKeypress.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Scenes\Scripting\ScriptingExample.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Scenes\Trigger volumes\GenericTrigger.cs" />
@@ -65,6 +66,11 @@
      <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMove.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMoveOnSphere.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMovePhysics.cs" />
+     <Compile Include="Assets\Scriptable Objects\Inventory\Scripts\InventoryObject.cs" />
+     <Compile Include="Assets\Scriptable Objects\Items\Scripts\DefaultObject.cs" />
+     <Compile Include="Assets\Scriptable Objects\Items\Scripts\EquipmentObject.cs" />
+     <Compile Include="Assets\Scriptable Objects\Items\Scripts\FoodObject.cs" />
+     <Compile Include="Assets\Scriptable Objects\Items\Scripts\ItemObject.cs" />
      <Compile Include="Assets\Scripts\EnemyMove.cs" />
      <Compile Include="Assets\Scripts\Event.cs" />
      <Compile Include="Assets\Scripts\FogOfWarScript.cs" />
@@ -78,50 +84,49 @@
      <Compile Include="Assets\Scripts\cameraController.cs" />
      <Compile Include="Assets\Test\BagUI.cs" />
      <Compile Include="Assets\Test\HealthKit.cs" />
-     <Compile Include="Assets\Test\Item.cs" />
      <Compile Include="Assets\Test\Player.cs" />
-     <None Include="Assets\info_morgueroom.txt" />
+     <Compile Include="Assets\Test\TestItem.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Cinemachine">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/RaceGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/4LXCK/4LXCK/RaceGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0a7/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

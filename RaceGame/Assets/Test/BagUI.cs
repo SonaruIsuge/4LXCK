@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class BagUI : MonoBehaviour
 {
     [SerializeField]List<Text> bagList = new List<Text>();
-    List<Item> items = new List<Item>();
-    public void AddItem(Item item)
+    List<TestItem> items = new List<TestItem>();
+    public void AddItem(TestItem item)
     {
         items.Add(item);
         UpdateUI();
     }
 
-    public void RemoveItem(Item item)
+    public void RemoveItem(TestItem item)
     {
         items.Remove(item);
         UpdateUI();

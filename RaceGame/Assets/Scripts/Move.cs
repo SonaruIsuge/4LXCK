@@ -8,6 +8,8 @@ public class Move : MonoBehaviour
     public float rotatespeed;
     public Rigidbody rb;
     public GameObject lightInPlayer;
+
+    public InventoryObject inventory;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,25 +19,21 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
+        
         if (Input.GetKey(KeyCode.W))
         {
-            //transform.eulerAngles = new Vector3(0, 0, 0);
             transform.Translate(Vector3.forward * Time.deltaTime * speed);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            //transform.eulerAngles = new Vector3(0, 180, 0);
             transform.Translate(Vector3.back * Time.deltaTime * speed);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            //transform.eulerAngles = new Vector3(0, 270, 0);
             transform.Rotate(0, -rotatespeed * Time.deltaTime, 0);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            //transform.eulerAngles = new Vector3(0, 90, 0);
             transform.Rotate(0, rotatespeed * Time.deltaTime, 0);
         }
 
@@ -46,4 +44,13 @@ public class Move : MonoBehaviour
         
     }
 
+    public void OnTriggerEnter(Collider other)
+    {
+        var item = other.GetComponent<Item>();
+        if (item)
+        {
+            inventory.AddItem(item.item, 1);
+            Destroy(other.gameObject);
+        }
+    } 
 }

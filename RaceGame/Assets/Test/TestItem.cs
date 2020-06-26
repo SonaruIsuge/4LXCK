@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(Collider))]
-public class Item : MonoBehaviour
+public class TestItem : MonoBehaviour
 {
     public EItemType type;
 }

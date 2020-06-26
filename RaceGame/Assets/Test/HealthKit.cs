@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthKit : Item
+public class HealthKit : TestItem
 {
     public int value = 100;
 }

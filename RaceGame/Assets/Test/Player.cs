@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField]List<Item> itemList = new List<Item>();
+    [SerializeField]List<TestItem> itemList = new List<TestItem>();
     [SerializeField] BagUI ui = null;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K)&&itemList.Count!=0)
         {
-            foreach(Item o in itemList)
+            foreach(TestItem o in itemList)
             {
                 if (o.type == EItemType.HEALTH_KIT)
                 {
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         {
             if (col.gameObject.tag == "Item")
             {
-                Item o = col.GetComponent<Item>();
+                TestItem o = col.GetComponent<TestItem>();
                 if (o != null)
                 {
                     itemList.Add(o);
