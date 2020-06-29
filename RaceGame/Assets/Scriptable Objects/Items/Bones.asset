@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9d92149b1481143a1fd6eea215dff1, type: 3}
   m_Name: Bones
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 7756700090793074023, guid: 4f069213c54227e419b091ee4cfc2eb9, type: 3}
   type: 2
   descriptions: 

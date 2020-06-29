@@ -53,4 +53,8 @@ public class Move : MonoBehaviour
             Destroy(other.gameObject);
         }
     } 
+    private void OnApplicationQuit()
+    {
+        inventory.Container.Clear();
+    }
 }
