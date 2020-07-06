@@ -17,6 +17,17 @@ public class Move : MonoBehaviour
     }
 
     // Update is called once per frame
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            inventory.Save();
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            inventory.Load();
+        }
+    }
     void FixedUpdate()
     {
         

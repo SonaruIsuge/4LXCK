@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\UIControl\MapControl.cs" />
      <Compile Include="Assets\Scripts\UIControl\PauseControl.cs" />
+     <Compile Include="Assets\Scripts\UIControl\StartGameButton.cs" />
      <Compile Include="Assets\Scripts\UIControl\UIButtom.cs" />
      <Compile Include="Assets\Scripts\cameraController.cs" />
      <Compile Include="Assets\Test\BagUI.cs" />
