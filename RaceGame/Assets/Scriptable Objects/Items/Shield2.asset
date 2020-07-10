@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca99337a8fe39e48a77b6091f7393ad, type: 3}
   m_Name: Shield2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1314830617834847681, guid: ec5f229ffb937954bab754419920cb53, type: 3}
+  id: 3
+  uiDisplay: {fileID: 4551601812578344196, guid: d07b803c54ae9fb4ebfc1e8a13b12f4c,
+    type: 3}
   type: 1
   descriptions: 
   atkBonus: 0
