@@ -17,5 +17,12 @@ MonoBehaviour:
     type: 3}
   type: 1
   descriptions: 
-  atkBonus: 0
-  defBonus: 20
+  buffs:
+  - attributes: 0
+    value: 0
+    min: 10
+    max: 30
+  - attributes: 3
+    value: 0
+    min: 4
+    max: 15
